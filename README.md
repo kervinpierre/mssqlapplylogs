@@ -11,10 +11,12 @@ Regular Log Shipping is configured on the internal SQL Server instance, but the 
 MSSQLApplyLogs provides a process that 
 * Restores the last full backup for your database
 * Parses your full backup file name for its creation date.
-  * Optionally uses the backup file's Last Modified File-system attribute for creation time
+  * Optionally uses the backup file's Last Modified File-system attribute for its Creation Time
 * Searches your local folder for all Transaction Log Backups beyond your full backup date and Restores those.
 * Optionally listens to your local backup folder for new backup files.  Processing those as they are created.
-
+* Add permissions to the Log Backup files before SQL Server attempts to run the RESTORE query.
+* Override most options in the properties file or command line interface.
+* 
 Example usage on the command line looks like...
 ```
 PS C:\syncbackups\target> java -jar .\mssqlapplylog-1.0.jar --conf conf.properties --restore-full
