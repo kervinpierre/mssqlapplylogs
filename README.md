@@ -1,4 +1,4 @@
-# mssqlapplylogs
+# MSSQL Apply Logs
 Continously apply Microsoft SQL Server Log Backups without configuring Log Shipping on the receiving end.
 
 ## Motivation
