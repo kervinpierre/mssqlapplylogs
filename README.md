@@ -6,6 +6,8 @@ This project aims to provide log shipping to Microsoft SQL Server instances that
 
 Regular Log Shipping is configured on the internal SQL Server instance, but the Log Backup files e.g. **.trn* files are transferred *out-of-band*. For instance we transfer our Log Backups via SSH and RSync on Linux servers.
 
+![A simple MSSQLApplyLogs Network](https://raw.githubusercontent.com/kervinpierre/mssqlapplylogs/master/docs/images/mssqlapplylog_networkdiagram01.png)
+
 ## Feature Overview
 
 MSSQLApplyLogs provides a process that 
